@@ -128,6 +128,12 @@
       <DependentUpon>rptSanPham.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="rptSanPhamMaxMin.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSanPhamMaxMin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TenTK.cs" />
     <EmbeddedResource Include="BaoCaoSanPham.resx">
       <DependentUpon>BaoCaoSanPham.cs</DependentUpon>
@@ -176,6 +182,10 @@
     <EmbeddedResource Include="rptSanPham.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptSanPham.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSanPhamMaxMin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSanPhamMaxMin.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
