@@ -32,6 +32,7 @@ namespace Thuchanh
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.tbNguoiLap = new System.Windows.Forms.TextBox();
             this.btnSetNguoiLap = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -42,19 +43,19 @@ namespace Thuchanh
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Top;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 383);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1092, 736);
             this.crystalReportViewer1.TabIndex = 0;
             // 
             // tbNguoiLap
             // 
-            this.tbNguoiLap.Location = new System.Drawing.Point(178, 408);
+            this.tbNguoiLap.Location = new System.Drawing.Point(343, 764);
             this.tbNguoiLap.Name = "tbNguoiLap";
             this.tbNguoiLap.Size = new System.Drawing.Size(188, 20);
             this.tbNguoiLap.TabIndex = 1;
             // 
             // btnSetNguoiLap
             // 
-            this.btnSetNguoiLap.Location = new System.Drawing.Point(434, 406);
+            this.btnSetNguoiLap.Location = new System.Drawing.Point(599, 762);
             this.btnSetNguoiLap.Name = "btnSetNguoiLap";
             this.btnSetNguoiLap.Size = new System.Drawing.Size(158, 23);
             this.btnSetNguoiLap.TabIndex = 2;
@@ -62,11 +63,22 @@ namespace Thuchanh
             this.btnSetNguoiLap.UseVisualStyleBackColor = true;
             this.btnSetNguoiLap.Click += new System.EventHandler(this.btnSetNguoiLap_Click);
             // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(781, 761);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(75, 23);
+            this.btnHome.TabIndex = 3;
+            this.btnHome.Text = "Trang chủ";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // BaoCaoSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1092, 811);
+            this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnSetNguoiLap);
             this.Controls.Add(this.tbNguoiLap);
             this.Controls.Add(this.crystalReportViewer1);
@@ -83,5 +95,6 @@ namespace Thuchanh
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.TextBox tbNguoiLap;
         private System.Windows.Forms.Button btnSetNguoiLap;
+        private System.Windows.Forms.Button btnHome;
     }
 }

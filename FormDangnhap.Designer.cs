@@ -127,6 +127,7 @@ namespace Thuchanh
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDangnhap";
             this.Text = "FormDangnhap";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormDangnhap_FormClosed);
             this.Load += new System.EventHandler(this.FormDangnhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

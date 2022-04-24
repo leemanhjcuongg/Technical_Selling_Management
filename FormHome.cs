@@ -45,9 +45,28 @@ namespace Thuchanh
 
         private void HDToolStripMenuItem_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void hóaĐơnXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             this.Hide();
             FormHDXuat form = new FormHDXuat();
             form.Show();
+        }
+
+        private void danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BaoCaoSanPham rpt = new BaoCaoSanPham();
+            rpt.Show();
+        }
+
+        private void FormHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đóng form hay không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+            else e.Cancel = true;
         }
     }
 }

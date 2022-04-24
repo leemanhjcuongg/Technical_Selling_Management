@@ -34,6 +34,10 @@
             this.SPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hóaĐơnNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hóaĐơnXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +48,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NVToolStripMenuItem,
             this.SPToolStripMenuItem,
-            this.HDToolStripMenuItem});
+            this.HDToolStripMenuItem,
+            this.báoCáoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -68,6 +73,9 @@
             // 
             // HDToolStripMenuItem
             // 
+            this.HDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hóaĐơnNhậpToolStripMenuItem,
+            this.hóaĐơnXuấtToolStripMenuItem});
             this.HDToolStripMenuItem.Name = "HDToolStripMenuItem";
             this.HDToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.HDToolStripMenuItem.Text = "Quản lý hóa đơn";
@@ -78,12 +86,40 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(817, 429);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // báoCáoToolStripMenuItem
+            // 
+            this.báoCáoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem});
+            this.báoCáoToolStripMenuItem.Name = "báoCáoToolStripMenuItem";
+            this.báoCáoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.báoCáoToolStripMenuItem.Text = "Báo cáo";
+            // 
+            // danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem
+            // 
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Name = "danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem";
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Text = "Danh sách sản phẩm bán chạy nhất 2021";
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Click += new System.EventHandler(this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem_Click);
+            // 
+            // hóaĐơnNhậpToolStripMenuItem
+            // 
+            this.hóaĐơnNhậpToolStripMenuItem.Name = "hóaĐơnNhậpToolStripMenuItem";
+            this.hóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hóaĐơnNhậpToolStripMenuItem.Text = "Hóa đơn nhập";
+            // 
+            // hóaĐơnXuấtToolStripMenuItem
+            // 
+            this.hóaĐơnXuấtToolStripMenuItem.Name = "hóaĐơnXuấtToolStripMenuItem";
+            this.hóaĐơnXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.hóaĐơnXuấtToolStripMenuItem.Text = "Hóa đơn xuất";
+            this.hóaĐơnXuấtToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnXuấtToolStripMenuItem_Click);
             // 
             // FormHome
             // 
@@ -94,9 +130,10 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHome";
             this.Text = "Phần mềm quản lý kinh doanh máy tính";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormHome_FormClosing);
             this.Load += new System.EventHandler(this.FormHome_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -113,5 +150,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem SPToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem báoCáoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hóaĐơnNhậpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hóaĐơnXuấtToolStripMenuItem;
     }
 }

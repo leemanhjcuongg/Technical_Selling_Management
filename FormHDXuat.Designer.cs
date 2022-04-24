@@ -434,7 +434,6 @@ namespace Thuchanh
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormHDXuat";
             this.Text = "Quản lý hóa đơn xuất";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormHDXuat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTXuat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDXuat)).EndInit();

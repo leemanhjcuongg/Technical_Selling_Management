@@ -78,5 +78,10 @@ namespace Thuchanh
         {
 
         }
+
+        private void FormDangnhap_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

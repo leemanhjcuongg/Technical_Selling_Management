@@ -31,7 +31,7 @@ namespace Thuchanh
             using (SqlConnection conn = new SqlConnection(constr))
             {
                 conn.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM vwDSSP", conn))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM vvSP_KhongBan_2021", conn))
                 {
                     cmd.CommandType = CommandType.Text;
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
@@ -50,7 +50,7 @@ namespace Thuchanh
         private void btnSetNguoiLap_Click(object sender, EventArgs e)
         {
             ReportDocument rpt = new ReportDocument();
-            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPham.rpt");
+            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPhamMaxMin.rpt");
 
             ParameterFieldDefinition pfd = rpt.DataDefinition.ParameterFields["NguoiLap"];
             ParameterValues pv = new ParameterValues();
@@ -65,6 +65,13 @@ namespace Thuchanh
 
             crystalReportViewer1.ReportSource = rpt;
             crystalReportViewer1.Refresh();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHome home = new FormHome();
+            home.Show();
         }
     }
 }
