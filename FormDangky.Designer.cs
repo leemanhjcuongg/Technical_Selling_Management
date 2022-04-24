@@ -40,42 +40,47 @@ namespace Thuchanh
             // 
             // txtTenTK
             // 
-            this.txtTenTK.Location = new System.Drawing.Point(425, 149);
+            this.txtTenTK.Location = new System.Drawing.Point(132, 43);
+            this.txtTenTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenTK.Name = "txtTenTK";
-            this.txtTenTK.Size = new System.Drawing.Size(122, 22);
+            this.txtTenTK.Size = new System.Drawing.Size(92, 20);
             this.txtTenTK.TabIndex = 0;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(423, 190);
+            this.txtMatKhau.Location = new System.Drawing.Point(130, 76);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(122, 22);
+            this.txtMatKhau.Size = new System.Drawing.Size(92, 20);
             this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(339, 154);
+            this.label1.Location = new System.Drawing.Point(67, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Tài khoản";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(344, 194);
+            this.label2.Location = new System.Drawing.Point(71, 80);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mật khẩu";
             // 
             // btnDangky
             // 
-            this.btnDangky.Location = new System.Drawing.Point(425, 287);
+            this.btnDangky.Location = new System.Drawing.Point(132, 155);
+            this.btnDangky.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDangky.Name = "btnDangky";
-            this.btnDangky.Size = new System.Drawing.Size(99, 34);
+            this.btnDangky.Size = new System.Drawing.Size(74, 28);
             this.btnDangky.TabIndex = 4;
             this.btnDangky.Text = "Đăng ký";
             this.btnDangky.UseVisualStyleBackColor = true;
@@ -84,25 +89,27 @@ namespace Thuchanh
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(288, 226);
+            this.label3.Location = new System.Drawing.Point(29, 106);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 17);
+            this.label3.Size = new System.Drawing.Size(93, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Nhập lại mật khẩu";
             // 
             // txtNhaplai
             // 
-            this.txtNhaplai.Location = new System.Drawing.Point(425, 226);
+            this.txtNhaplai.Location = new System.Drawing.Point(132, 106);
+            this.txtNhaplai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNhaplai.Name = "txtNhaplai";
-            this.txtNhaplai.Size = new System.Drawing.Size(122, 22);
+            this.txtNhaplai.Size = new System.Drawing.Size(92, 20);
             this.txtNhaplai.TabIndex = 5;
             this.txtNhaplai.UseSystemPasswordChar = true;
             // 
             // FormDangky
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 553);
+            this.ClientSize = new System.Drawing.Size(348, 218);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNhaplai);
             this.Controls.Add(this.btnDangky);
@@ -110,8 +117,10 @@ namespace Thuchanh
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTenTK);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormDangky";
             this.Text = "FormDangky";
+            this.Load += new System.EventHandler(this.FormDangky_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

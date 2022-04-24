@@ -38,7 +38,16 @@ namespace Thuchanh
 
         private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            frSanPham form = new frSanPham();
+            form.Show();
+        }
 
+        private void HDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormHDXuat form = new FormHDXuat();
+            form.Show();
         }
     }
 }

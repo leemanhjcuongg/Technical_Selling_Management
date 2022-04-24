@@ -42,16 +42,16 @@ namespace Thuchanh
             // 
             // txtTenTK
             // 
-            this.txtTenTK.Location = new System.Drawing.Point(226, 111);
-            this.txtTenTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenTK.Location = new System.Drawing.Point(113, 123);
+            this.txtTenTK.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenTK.Name = "txtTenTK";
             this.txtTenTK.Size = new System.Drawing.Size(109, 20);
             this.txtTenTK.TabIndex = 0;
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(226, 161);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPass.Location = new System.Drawing.Point(113, 173);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(109, 20);
@@ -61,7 +61,7 @@ namespace Thuchanh
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(166, 114);
+            this.label1.Location = new System.Drawing.Point(53, 126);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
@@ -71,7 +71,7 @@ namespace Thuchanh
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 163);
+            this.label2.Location = new System.Drawing.Point(57, 175);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
@@ -81,8 +81,8 @@ namespace Thuchanh
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(256, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(121, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(60, 68);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,8 +91,8 @@ namespace Thuchanh
             // 
             // btnDangnhap
             // 
-            this.btnDangnhap.Location = new System.Drawing.Point(234, 230);
-            this.btnDangnhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangnhap.Location = new System.Drawing.Point(121, 242);
+            this.btnDangnhap.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(72, 26);
             this.btnDangnhap.TabIndex = 6;
@@ -103,7 +103,7 @@ namespace Thuchanh
             // linkDangky
             // 
             this.linkDangky.AutoSize = true;
-            this.linkDangky.Location = new System.Drawing.Point(280, 197);
+            this.linkDangky.Location = new System.Drawing.Point(167, 209);
             this.linkDangky.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkDangky.Name = "linkDangky";
             this.linkDangky.Size = new System.Drawing.Size(73, 13);
@@ -116,7 +116,7 @@ namespace Thuchanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(303, 279);
             this.Controls.Add(this.linkDangky);
             this.Controls.Add(this.btnDangnhap);
             this.Controls.Add(this.pictureBox1);
@@ -124,7 +124,7 @@ namespace Thuchanh
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtTenTK);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDangnhap";
             this.Text = "FormDangnhap";
             this.Load += new System.EventHandler(this.FormDangnhap_Load);

@@ -260,5 +260,17 @@ namespace Thuchanh
             this.Hide();
             formHome.Show();
         }
+
+        private void frSanPham_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn đóng form hay không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                Application.Exit();
+            else e.Cancel = true;
+        }
+
+        private void frSanPham_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
     }
 }

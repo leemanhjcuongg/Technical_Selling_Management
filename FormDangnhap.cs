@@ -13,7 +13,13 @@ namespace Thuchanh
 {
     public partial class FormDangnhap : Form
     {
-        public static String constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
+        static String constr = @"
+            Data Source=CUONG\CUONG;
+            Integrated Security=True;
+            Initial Catalog=KinhDoanhMayTinh";
+        //public static String constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
+
+        static int count = 0;
         public FormDangnhap()
         {
             InitializeComponent();
@@ -26,17 +32,38 @@ namespace Thuchanh
             SqlCommand cmd = new SqlCommand("prChecktaikhoan", sql);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ten", txtTenTK.Text.ToString());
+            
+            //if (cmd.ExecuteNonQuery() <= 0)
+            //{
+            //    MessageBox.Show("Sai tên đăng nhập!", "Thông báo");
+            //}
+            //else
+            //{
             SqlDataReader rd = cmd.ExecuteReader();
             rd.Read();
             if (rd["matkhau"].ToString().Equals(txtPass.Text.ToString()))
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo");
+                //MessageBox.Show("Đăng nhập thành công!", "Thông báo");
                 sql.Close();
                 this.Hide();
                 FormHome home = new FormHome();
                 home.Show();
+                count = 0;
             }
-            else MessageBox.Show("Đăng nhập thất bại !", "Thông báo");
+            else
+            {
+                count++;
+                //MessageBox.Show("Đăng nhập thất bại !", "Thông báo");
+                if (count >= 3)
+                {
+                    MessageBox.Show("Đăng nhập sai quá nhiều lần! Vui lòng tạo tài khoản khác", "Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    this.Hide();
+                    FormDangky form = new FormDangky();
+                    form.Show();
+                }
+            }
+            //}
+            
 
         }
 
@@ -51,7 +78,5 @@ namespace Thuchanh
         {
 
         }
-        //LMC đã ở đây
-        //ảo thật tôi đã xem đc design r
     }
 }

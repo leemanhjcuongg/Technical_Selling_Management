@@ -14,7 +14,11 @@ namespace Thuchanh
 {
     public partial class FormDangky : Form
     {
-        public static String constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
+        static String constr = @"
+            Data Source=CUONG\CUONG;
+            Integrated Security=True;
+            Initial Catalog=KinhDoanhMayTinh";
+        //public static String constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
         public FormDangky()
         {
             InitializeComponent();
@@ -59,6 +63,11 @@ namespace Thuchanh
                 form.ShowDialog();
                 sql.Close();
             }
+
+        }
+
+        private void FormDangky_Load(object sender, EventArgs e)
+        {
 
         }
     }

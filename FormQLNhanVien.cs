@@ -15,7 +15,11 @@ namespace Thuchanh
     public partial class FormQLNhanVien : Form
     {
         static DataTable dttable= new DataTable();
-        static string constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
+        static String constr = @"
+            Data Source=CUONG\CUONG;
+            Integrated Security=True;
+            Initial Catalog=KinhDoanhMayTinh";
+        //static string constr = "Data Source=LAPTOP-B66GKD0P;Initial Catalog=KinhDoanhMayTinh;Integrated Security=True";
         public FormQLNhanVien()
         {
             InitializeComponent();

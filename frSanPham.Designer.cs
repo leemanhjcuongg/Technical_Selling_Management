@@ -299,7 +299,9 @@ namespace Thuchanh
             this.Controls.Add(this.btnHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frSanPham";
-            this.Text = "frSanPham";
+            this.Text = "Quản lý sản phẩm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frSanPham_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frSanPham_FormClosed);
             this.Load += new System.EventHandler(this.frSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProviderSP)).EndInit();

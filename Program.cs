@@ -20,7 +20,8 @@ namespace Thuchanh
             //Application.Run(new FormQLNhanVien());
             //Application.Run(new frSanPham());
             //Application.Run(new HDN());
-            Application.Run(new BaoCaoSanPham());
+            //Application.Run(new BaoCaoSanPham());
+            Application.Run(new FormDangnhap());
         }
     }
 }
