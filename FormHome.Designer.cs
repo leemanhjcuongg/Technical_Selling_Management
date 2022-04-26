@@ -33,11 +33,11 @@
             this.NVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnNhậpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,17 +81,18 @@
             this.HDToolStripMenuItem.Text = "Quản lý hóa đơn";
             this.HDToolStripMenuItem.Click += new System.EventHandler(this.HDToolStripMenuItem_Click);
             // 
-            // pictureBox1
+            // hóaĐơnNhậpToolStripMenuItem
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(817, 429);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.hóaĐơnNhậpToolStripMenuItem.Name = "hóaĐơnNhậpToolStripMenuItem";
+            this.hóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.hóaĐơnNhậpToolStripMenuItem.Text = "Hóa đơn nhập";
+            // 
+            // hóaĐơnXuấtToolStripMenuItem
+            // 
+            this.hóaĐơnXuấtToolStripMenuItem.Name = "hóaĐơnXuấtToolStripMenuItem";
+            this.hóaĐơnXuấtToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.hóaĐơnXuấtToolStripMenuItem.Text = "Hóa đơn xuất";
+            this.hóaĐơnXuấtToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnXuấtToolStripMenuItem_Click);
             // 
             // báoCáoToolStripMenuItem
             // 
@@ -104,22 +105,21 @@
             // danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem
             // 
             this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Name = "danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem";
-            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Size = new System.Drawing.Size(289, 22);
-            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Text = "Danh sách sản phẩm bán chạy nhất 2021";
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Text = "Danh sách sản phẩm";
             this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem.Click += new System.EventHandler(this.danhSáchSảnPhẩmBánChạyNhất2021ToolStripMenuItem_Click);
             // 
-            // hóaĐơnNhậpToolStripMenuItem
+            // pictureBox1
             // 
-            this.hóaĐơnNhậpToolStripMenuItem.Name = "hóaĐơnNhậpToolStripMenuItem";
-            this.hóaĐơnNhậpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hóaĐơnNhậpToolStripMenuItem.Text = "Hóa đơn nhập";
-            // 
-            // hóaĐơnXuấtToolStripMenuItem
-            // 
-            this.hóaĐơnXuấtToolStripMenuItem.Name = "hóaĐơnXuấtToolStripMenuItem";
-            this.hóaĐơnXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.hóaĐơnXuấtToolStripMenuItem.Text = "Hóa đơn xuất";
-            this.hóaĐơnXuấtToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnXuấtToolStripMenuItem_Click);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(817, 429);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // FormHome
             // 

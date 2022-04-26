@@ -28,29 +28,35 @@ namespace Thuchanh
 
         private void BaoCaoSanPham_Load(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(constr))
-            {
-                conn.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT * FROM vvSP_KhongBan_2021", conn))
-                {
-                    cmd.CommandType = CommandType.Text;
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-                        
-                        rptSanPham.SetDataSource(dt);
-                        crystalReportViewer1.ReportSource = rptSanPham;
-                        crystalReportViewer1.Refresh();
-                    }
-                }
-            }
+            //using (SqlConnection conn = new SqlConnection(constr))
+            //{
+            //    conn.Open();
+            //    using (SqlCommand cmd = new SqlCommand("SELECT * FROM vvSP_KhongBan_2021", conn))
+            //    {
+            //        cmd.CommandType = CommandType.Text;
+            //        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+            //        {
+            //            DataTable dt = new DataTable();
+            //            adapter.Fill(dt);
+
+            //            rptSanPham.SetDataSource(dt);
+            //            crystalReportViewer1.ReportSource = rptSanPham;
+            //            crystalReportViewer1.Refresh();
+            //        }
+            //    }
+            //}
+            ReportDocument rpt = new ReportDocument();
+            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPham.rpt");
+            rpt.SetParameterValue("NguoiLap", "Lê Mạnh Cường");
+            crystalReportViewer1.ReportSource = rpt;
+            crystalReportViewer1.Refresh();
         }
 
         private void btnSetNguoiLap_Click(object sender, EventArgs e)
         {
             ReportDocument rpt = new ReportDocument();
-            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPhamMaxMin.rpt");
+            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPham.rpt");
+            
 
             ParameterFieldDefinition pfd = rpt.DataDefinition.ParameterFields["NguoiLap"];
             ParameterValues pv = new ParameterValues();
@@ -72,6 +78,17 @@ namespace Thuchanh
             this.Hide();
             FormHome home = new FormHome();
             home.Show();
+        }
+
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            rptSanPham rpt = new rptSanPham();
+            rpt.Load(@"D:\C_SHARP\QLKDMT_BTL_CSHARP\Thuchanh\rptSanPham.rpt");
+
+            rpt.SetParameterValue("NguoiLap", "Lê Mạnh Cường");
+            crystalReportViewer1.SelectionFormula = "{tblSanPham.iNamSX} = "+tbLoc.Text;
+            crystalReportViewer1.ReportSource = rpt;
+            crystalReportViewer1.Refresh();
         }
     }
 }

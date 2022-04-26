@@ -64,9 +64,10 @@ namespace Thuchanh
 
         private void FormHome_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn đóng form hay không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                Application.Exit();
-            else e.Cancel = true;
+            
+            Application.Exit();
+            int time = DateTime.Now.Second - TenTK.time.Second;
+            //MessageBox.Show("Bạn đã đăng nhập " + time + " giây", "Thông báo");
         }
     }
 }

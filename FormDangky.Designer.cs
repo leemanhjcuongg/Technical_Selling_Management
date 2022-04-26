@@ -41,7 +41,7 @@ namespace Thuchanh
             // txtTenTK
             // 
             this.txtTenTK.Location = new System.Drawing.Point(132, 43);
-            this.txtTenTK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTenTK.Margin = new System.Windows.Forms.Padding(2);
             this.txtTenTK.Name = "txtTenTK";
             this.txtTenTK.Size = new System.Drawing.Size(92, 20);
             this.txtTenTK.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Thuchanh
             // txtMatKhau
             // 
             this.txtMatKhau.Location = new System.Drawing.Point(130, 76);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(92, 20);
             this.txtMatKhau.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Thuchanh
             // btnDangky
             // 
             this.btnDangky.Location = new System.Drawing.Point(132, 155);
-            this.btnDangky.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDangky.Margin = new System.Windows.Forms.Padding(2);
             this.btnDangky.Name = "btnDangky";
             this.btnDangky.Size = new System.Drawing.Size(74, 28);
             this.btnDangky.TabIndex = 4;
@@ -99,10 +99,10 @@ namespace Thuchanh
             // txtNhaplai
             // 
             this.txtNhaplai.Location = new System.Drawing.Point(132, 106);
-            this.txtNhaplai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNhaplai.Margin = new System.Windows.Forms.Padding(2);
             this.txtNhaplai.Name = "txtNhaplai";
             this.txtNhaplai.Size = new System.Drawing.Size(92, 20);
-            this.txtNhaplai.TabIndex = 5;
+            this.txtNhaplai.TabIndex = 3;
             this.txtNhaplai.UseSystemPasswordChar = true;
             // 
             // FormDangky
@@ -117,7 +117,7 @@ namespace Thuchanh
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTenTK);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDangky";
             this.Text = "FormDangky";
             this.Load += new System.EventHandler(this.FormDangky_Load);

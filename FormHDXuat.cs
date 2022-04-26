@@ -176,6 +176,7 @@ namespace Thuchanh
                     {
                         MessageBox.Show("Thêm thành công");
                         LoadHDX();
+                        btnLoad_Click(sender,e);
                         return;
                     }
                     //}

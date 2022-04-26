@@ -33,6 +33,9 @@ namespace Thuchanh
             this.tbNguoiLap = new System.Windows.Forms.TextBox();
             this.btnSetNguoiLap = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.tbLoc = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnLoc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -73,11 +76,40 @@ namespace Thuchanh
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // tbLoc
+            // 
+            this.tbLoc.Location = new System.Drawing.Point(48, 177);
+            this.tbLoc.Name = "tbLoc";
+            this.tbLoc.Size = new System.Drawing.Size(100, 20);
+            this.tbLoc.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 143);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Năm";
+            // 
+            // btnLoc
+            // 
+            this.btnLoc.Location = new System.Drawing.Point(61, 222);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(75, 23);
+            this.btnLoc.TabIndex = 6;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = true;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
+            // 
             // BaoCaoSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1092, 811);
+            this.Controls.Add(this.btnLoc);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbLoc);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnSetNguoiLap);
             this.Controls.Add(this.tbNguoiLap);
@@ -96,5 +128,8 @@ namespace Thuchanh
         private System.Windows.Forms.TextBox tbNguoiLap;
         private System.Windows.Forms.Button btnSetNguoiLap;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.TextBox tbLoc;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLoc;
     }
 }

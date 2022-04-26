@@ -49,6 +49,7 @@ namespace Thuchanh
                 FormHome home = new FormHome();
                 home.Show();
                 count = 0;
+                TenTK.time = DateTime.Now;
             }
             else
             {

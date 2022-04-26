@@ -8,6 +8,7 @@ namespace Thuchanh
 {
     class TenTK
     {
-        public static String ten = "Phạm Hồng Quân";
+        public static String ten = "Lê Mạnh Cường";
+        public static DateTime time; 
     }
 }
